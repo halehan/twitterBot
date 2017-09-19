@@ -6,7 +6,7 @@ var T = new Twitter(config);
 // Set up your search parameters
 var params = {
   q: '@getongab',
-  count: 200,
+  count: 50,
   lang: 'en'
 }
 
