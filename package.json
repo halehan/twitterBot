@@ -1,0 +1,22 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "Node.js Twitter Bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halehan/twitterBot.git"
+  },
+  "author": "Thomas Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/halehan/twitterBot/issues"
+  },
+  "homepage": "https://github.com/halehan/twitterBot#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
