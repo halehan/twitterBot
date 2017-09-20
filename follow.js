@@ -4,8 +4,8 @@ var T = new Twitter(config);
 
 // Set up your search parameters
 var params = {
-  q: '#nodejs',
-  count: 10,
+  q: '#MAGA',
+  count: 5,
   result_type: 'popular',
   lang: 'en'
 }
