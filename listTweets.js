@@ -6,7 +6,7 @@ var T = new Twitter(config);
 // Set up your search parameters
 var params = {
   q: '@getongab',
-  count: 200,
+  count: 20,
   lang: 'en'
 }
 
@@ -18,7 +18,9 @@ T.get('search/tweets', params, function(err, data, response) {
     for(let i = 0; i < data.statuses.length; i++){
       // Get the tweet Id from the returned data
       let id = { id: data.statuses[i].id_str }
-      console.log(id);
+      console.log(data.statuses[i].user.screen_name);
+      console.log(data.statuses[i].text);
+  //    console.log(id);
     
     }
   } else {
