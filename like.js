@@ -5,7 +5,7 @@ var T = new Twitter(config);
 
 // Set up your search parameters
 var params = {
-  q: '#FSU',
+  q: '#DitchMitch',
   count: 1000,
   //result_type: recent,
   lang: 'en'

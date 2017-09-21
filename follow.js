@@ -4,9 +4,8 @@ var T = new Twitter(config);
 
 // Set up your search parameters
 var params = {
-  q: '#MAGA',
-  count: 5,
-  result_type: 'popular',
+  q: 'soros terrorist',
+  count: 25,
   lang: 'en'
 }
 
@@ -19,6 +18,8 @@ T.get('search/tweets', params, function(err, data, response) {
       // Get the screen_name from the returned data
       let screen_name = data.statuses[i].user.screen_name;
       // THE FOLLOWING MAGIC GOES HERE
+      // friendships/destroy
+      // friendships/create
       T.post('friendships/create', {screen_name}, function(err, response){
         if(err){
           console.log(err);

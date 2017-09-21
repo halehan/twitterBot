@@ -5,8 +5,8 @@ var T = new Twitter(config);
 //COmment
 // Set up your search parameters
 var params = {
-  q: 'Paul Watson',
-  count: 500,
+  q: 'soros terrorist',
+  count: 100,
   lang: 'en'
 }
 
@@ -19,6 +19,18 @@ T.get('search/tweets', params, function(err, data, response) {
       // Get the tweet Id from the returned data
       let id = { id: data.statuses[i].id_str }
       console.log('@'+ data.statuses[i].user.screen_name);
+      let tweetMessage = 'Let Hungary or Israel take care of him ';
+      let twitterUserName = '@'+ data.statuses[i].user.screen_name;
+
+        T.post('statuses/update', {status: tweetMessage  + '@'+ twitterUserName},  function(error, tweet, response){
+            if(error){
+            console.log(error);
+            }
+            console.log('Just sent tweet ' + tweetMessage + ' to ' + twitterUserName  );
+    //        console.log(tweet);  // Tweet body.
+    //        console.log(response);  // Raw response object.
+      });
+
     //  console.log(data.statuses[i].text);
   //    console.log(id);
     
